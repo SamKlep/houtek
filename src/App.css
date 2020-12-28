@@ -5,3 +5,12 @@
 .card {
   border: none !important;
 }
+
+.what-img {
+  height: 100px;
+  width: 100px;
+}
+
+.footer-nav-list {
+  list-style-type: none;
+}

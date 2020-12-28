@@ -6,10 +6,10 @@ const Jumbo = () => {
     <div>
       <Jumbotron fluid>
         <Container>
-          <h1>Fluid jumbotron</h1>
+          <h1>Small Business Web Design + Development</h1>
           <p>
-            This is a modified jumbotron that occupies the entire horizontal
-            space of its parent.
+            Custom websites to get your business off the ground. Affordable &
+            customizable with 24 / 7 support.
           </p>
         </Container>
       </Jumbotron>

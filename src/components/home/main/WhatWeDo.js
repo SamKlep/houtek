@@ -5,8 +5,8 @@ const WhatWeDo = () => {
   return (
     <div>
       <Container className='text-center mt-5 mb-5'>
-        <Row>
-          <Col>
+        <Row className='justify-content-lg-center'>
+          <Col lg={6}>
             <h3>What We Do</h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur

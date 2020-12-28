@@ -1,25 +1,46 @@
 import React from 'react'
-import { Nav } from 'react-bootstrap'
+import { Container, Col, Row } from 'react-bootstrap'
 
 const Footer = () => {
   return (
     <>
-      <Nav className='justify-content-center p-5' activeKey='/home'>
-        <Nav.Item>
-          <Nav.Link href='/home'>Active</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey='link-1'>Link</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey='link-2'>Link</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey='disabled' disabled>
-            Disabled
-          </Nav.Link>
-        </Nav.Item>
-      </Nav>
+      <Container className='p-5 footer'>
+        <Row>
+          <Col className='text-center'>
+            <h5>-/+</h5>
+            <hr />
+            <p>
+              <a href='mailto:samklepdev@gmail.com'>samklepdev@gmail.com</a>
+            </p>
+            <p>
+              <a href='tel:7133769541'>713-376-9541</a>
+            </p>
+          </Col>
+          <Col className='text-center'>
+            <h5>Navigation</h5>
+            <hr />
+            <ul className=' footer-nav-list'>
+              <li>Home</li>
+              <li>About</li>
+              <li>Services</li>
+              <li>Portfolio</li>
+              <li>Blog</li>
+              <li>Contact</li>
+            </ul>
+          </Col>
+          <Col className='text-center'>
+            <h5>Serivces</h5>
+            <hr />
+            <ul className=' footer-nav-list'>
+              <li>Web Design</li>
+              <li>Website Maintenance</li>
+              <li>SEO Services</li>
+              <li>Content Creation</li>
+              <li>Logo Design</li>
+            </ul>
+          </Col>
+        </Row>
+      </Container>
     </>
   )
 }

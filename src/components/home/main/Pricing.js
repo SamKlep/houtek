@@ -1,55 +1,69 @@
 import React from 'react'
-import { Container, Row, Col, CardDeck, Card, Button } from 'react-bootstrap'
 
 const Pricing = () => {
   return (
     <div>
-      <Container className='text-center'>
-        <Row>
-          <Col>
-            <CardDeck>
-              <Card>
-                <Card.Body>
-                  <Card.Title className='bg-primary text-white p-3'>
-                    Standard
-                  </Card.Title>
-                  <Card.Text>
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </Card.Text>
-                  <Button>Learn More</Button>
-                </Card.Body>
-              </Card>
-              <Card>
-                <Card.Body>
-                  <Card.Title className='bg-primary text-white p-3'>
-                    Standard + DB
-                  </Card.Title>
-                  <Card.Text>
-                    This card has supporting text below as a natural lead-in to
-                    additional content.{' '}
-                  </Card.Text>
-                  <Button>Learn More</Button>
-                </Card.Body>
-              </Card>
-              <Card>
-                <Card.Body>
-                  <Card.Title className='bg-primary text-white p-3'>
-                    Repair / Maintenance
-                  </Card.Title>
-                  <Card.Text>
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This card has even longer
-                    content than the first to show that equal height action.
-                  </Card.Text>
-                  <Button>Learn More</Button>
-                </Card.Body>
-              </Card>
-            </CardDeck>
-          </Col>
-        </Row>
-      </Container>
+      <div className='card-deck mb-3 text-center'>
+        <div className='card mb-4 shadow-sm'>
+          <div className='card-header'>
+            <h4 className='my-0 font-weight-normal'>Standard</h4>
+          </div>
+          <div className='card-body'>
+            <h1 className='card-title pricing-card-title'>
+              $150 <small className='text-muted'>/ mo</small>
+            </h1>
+            <ul className='list-unstyled mt-3 mb-4'>
+              <li>10 users included</li>
+              <li>2 GB of storage</li>
+              <li>Email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button
+              type='button'
+              className='btn btn-lg btn-block btn-outline-primary'>
+              Contact us
+            </button>
+          </div>
+        </div>
+        <div className='card mb-4 shadow-sm'>
+          <div className='card-header'>
+            <h4 className='my-0 font-weight-normal'>Standard + DB</h4>
+          </div>
+          <div className='card-body'>
+            <h1 className='card-title pricing-card-title'>
+              $275 <small className='text-muted'>/ mo</small>
+            </h1>
+            <ul className='list-unstyled mt-3 mb-4'>
+              <li>20 users included</li>
+              <li>10 GB of storage</li>
+              <li>Priority email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type='button' className='btn btn-lg btn-block btn-primary'>
+              Contact us
+            </button>
+          </div>
+        </div>
+        <div className='card mb-4 shadow-sm'>
+          <div className='card-header'>
+            <h4 className='my-0 font-weight-normal'>Pro</h4>
+          </div>
+          <div className='card-body'>
+            <h1 className='card-title pricing-card-title'>
+              $350 <small className='text-muted'>/ mo</small>
+            </h1>
+            <ul className='list-unstyled mt-3 mb-4'>
+              <li>30 users included</li>
+              <li>15 GB of storage</li>
+              <li>Phone and email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type='button' className='btn btn-lg btn-block btn-primary'>
+              Contact us
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

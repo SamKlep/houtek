@@ -4,9 +4,9 @@ import { Container, Row, Col, Image } from 'react-bootstrap'
 const WhoWeAre = () => {
   return (
     <div>
-      <Container className='m-5 text-center'>
-        <Row>
-          <Col>
+      <Container className='text-center'>
+        <Row className='justify-content-lg-center'>
+          <Col lg={6}>
             <h3>Who We Are</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
