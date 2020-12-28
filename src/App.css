@@ -1,3 +1,7 @@
 .sam-image {
   height: 300px;
 }
+
+.card {
+  border: none !important;
+}
